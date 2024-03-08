@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Generator</title>
+</head>
+<body>
+
+<script>
+    function createLogo() {
+        // Get user input
+        var userText = prompt("Enter up to three characters:");
+        var textColor = prompt("Enter text color (keyword or hexadecimal):");
+        var shape = prompt("Choose a shape (circle, triangle, square):");
+        var shapeColor = prompt("Enter shape color (keyword or hexadecimal):");
+
+        // Validate user input and generate logo
+        if (userText.length <= 3 && ['circle', 'triangle', 'square'].includes(shape)) {
+            // Replace this section with your code to generate the logo using SVG or other methods
+            console.log("Generated logo.svg");
+        } else {
+            console.error("Invalid input. Please check your input and try again.");
+        }
+    }
+
+    // Call the createLogo function when the page loads (for testing purposes)
+    createLogo();
+</script>
+
+</body>
+</html>
